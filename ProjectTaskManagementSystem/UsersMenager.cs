@@ -10,13 +10,15 @@ internal class UsersMenager
 {
     private readonly IPasswordHasher _iPasswordHasher;
     private readonly IUserValidator _userValidator;
-    private readonly List<User> _users = new List<User>();
-    private readonly string _path = "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem";
-    private readonly string _fileName = "users.txt";
-    public UsersMenager(IPasswordHasher iPasswordHasher, IUserValidator userValidator)
+    private readonly string _path;
+    private readonly string _fileName;
+
+    public UsersMenager(IPasswordHasher iPasswordHasher, IUserValidator userValidator, string path, string fileName)
     {
         _iPasswordHasher = iPasswordHasher;
         _userValidator = userValidator;
+        _path = path;
+        _fileName = fileName;
     }
 
     private string _convertUserToString(User user)
