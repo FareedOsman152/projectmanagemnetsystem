@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjectTaskManagementSystem;
 
+internal interface UserAction
+{
+    public bool action(User user);
+}
+
 internal class UsersMenager
 {
     private readonly IPasswordHasher _iPasswordHasher;
