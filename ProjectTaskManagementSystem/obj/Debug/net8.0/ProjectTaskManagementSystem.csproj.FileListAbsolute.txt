@@ -1,0 +1,14 @@
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.exe
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.deps.json
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.runtimeconfig.json
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.dll
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.pdb
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.AssemblyInfoInputs.cache
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.AssemblyInfo.cs
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.csproj.CoreCompileInputs.cache
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.dll
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\refint\ProjectTaskManagementSystem.dll
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.pdb
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.genruntimeconfig.cache
+F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ref\ProjectTaskManagementSystem.dll

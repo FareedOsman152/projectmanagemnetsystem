@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\usersmenager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\usersmenager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\takeuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\takeuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\openningscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\openningscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersMenager.cs",
+              "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\UsersMenager.cs",
+              "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\UsersMenager.cs",
+              "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\UsersMenager.cs",
+              "RelativeToolTip": "ProjectTaskManagementSystem\\UsersMenager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:27:30.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TakeUserInfo.cs",
+              "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\TakeUserInfo.cs",
+              "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\TakeUserInfo.cs",
+              "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\TakeUserInfo.cs",
+              "RelativeToolTip": "ProjectTaskManagementSystem\\TakeUserInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:04:48.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogIn.cs",
+              "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\LogIn.cs",
+              "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\LogIn.cs",
+              "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\LogIn.cs",
+              "RelativeToolTip": "ProjectTaskManagementSystem\\LogIn.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:48:39.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\User.cs",
+              "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\User.cs",
+              "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\User.cs",
+              "RelativeToolTip": "ProjectTaskManagementSystem\\User.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:49:38.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OpenningScreen.cs",
+              "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\OpenningScreen.cs",
+              "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\OpenningScreen.cs",
+              "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\OpenningScreen.cs",
+              "RelativeToolTip": "ProjectTaskManagementSystem\\OpenningScreen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T05:47:20.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserValidator.cs",
+              "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\UserValidator.cs",
+              "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\UserValidator.cs",
+              "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\UserValidator.cs",
+              "RelativeToolTip": "ProjectTaskManagementSystem\\UserValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T08:27:04.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\Program.cs",
+              "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\Program.cs",
+              "RelativeToolTip": "ProjectTaskManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:28:50.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
