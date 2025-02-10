@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\usersmenager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\usersmenager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|solutionrelative:projecttaskmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE8D557C-CD18-49B4-A3E5-9BA541A143C7}|ProjectTaskManagementSystem\\ProjectTaskManagementSystem.csproj|f:\\programs\\projects\\c_sharp\\projecttaskmanagementsystem\\projecttaskmanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UsersMenager.cs",
               "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\UsersMenager.cs",
               "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\UsersMenager.cs",
               "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\UsersMenager.cs",
               "RelativeToolTip": "ProjectTaskManagementSystem\\UsersMenager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwBsAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T06:27:30.547Z",
               "EditorCaption": ""
@@ -115,13 +115,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "ProjectTaskManagementSystem\\Program.cs",
               "ToolTip": "F:\\programs\\projects\\C_sharp\\ProjectTaskManagementSystem\\ProjectTaskManagementSystem\\Program.cs",
               "RelativeToolTip": "ProjectTaskManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T22:28:50.775Z",
               "EditorCaption": ""
