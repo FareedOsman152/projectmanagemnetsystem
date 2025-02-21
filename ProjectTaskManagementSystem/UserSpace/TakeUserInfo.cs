@@ -1,10 +1,11 @@
-﻿using System;
+﻿using ProjectTaskManagementSystem.UserSpace.UserValidations.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectTaskManagementSystem;
+namespace ProjectTaskManagementSystem.UserSpace;
 
 internal class TakeUserInfo
 {
@@ -17,7 +18,7 @@ internal class TakeUserInfo
         _userValidator = userValidator;
     }
 
-    public bool GetUserInfo(out string? username , out string? password)
+    public bool GetUserInfo(out string? username, out string? password)
     {
         username = "unvalid";
         password = "unvalid";

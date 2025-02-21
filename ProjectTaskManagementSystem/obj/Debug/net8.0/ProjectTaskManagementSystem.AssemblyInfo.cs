@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectTaskManagementSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cae6869ec3dd6afc5bca542b2b0d85d64a410f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e96753e9882df4cd571ac75688bf32616c303575")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectTaskManagementSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectTaskManagementSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

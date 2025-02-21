@@ -12,3 +12,10 @@ F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSy
 F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.pdb
 F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.genruntimeconfig.cache
 F:\programs\projects\C_sharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ref\ProjectTaskManagementSystem.dll
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.AssemblyInfoInputs.cache
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.AssemblyInfo.cs
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.csproj.CoreCompileInputs.cache
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.dll
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\refint\ProjectTaskManagementSystem.dll
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.pdb
