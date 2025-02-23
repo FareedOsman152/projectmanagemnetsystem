@@ -14,10 +14,30 @@ internal class UserFactory
         _userValidator = userValidator;
         _lastID = lastID;
     }
+    private void CheckIsValidUser(string userName, string password)
+    {
+        if (!_userValidator.ValidateUsername(userName))
+        {
+            throw new ArgumentException("Invalid User Name");
+        }
+
+        if (!_userValidator.ValidatePassword(password))
+        {
+            throw new ArgumentException("Invalid Password");
+        }
+    }
+    /// <summary>
+    /// User Name Rules : more than 5 char && has digit && has punctuation && not contain '/'
+    /// Password Rules : more than 7 char && has number && has ponctuation && has upper case && has lower case
+    /// </summary>
+    /// <param name="userName"></param>
+    /// <param name="password"></param>
+    /// <returns></returns>
     public User CreateNewUser(string userName, string password)
     {
+        CheckIsValidUser(userName, password);
         string id = (_lastID.LastUniqueID() + 1).ToString();
-        return new User(id, userName, password, _passwordHasher, _userValidator);
+        return new User(id, userName, _passwordHasher.Hash(password));
     }
     /// <summary>
     /// create user with id from file
@@ -28,6 +48,6 @@ internal class UserFactory
     /// <returns></returns>
     public User CreateUserFromFile(string id, string userName, string password)
     {
-        return new User(id, userName, password, _passwordHasher, _userValidator);
+        return new User(id, userName, _passwordHasher.Hash(password));
     }
 }

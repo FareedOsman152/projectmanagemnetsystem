@@ -8,7 +8,7 @@ namespace ProjectTaskManagementSystem.UserSpace.Repository;
 
 internal interface IUserRepository
 {
-    public void AddUser(User user);
+    public void AddNewUser(User user);
     public void DeleteUser(User user);
     public void UpdateUser(User user);
     public bool GetUser(string username, string password, out User user);

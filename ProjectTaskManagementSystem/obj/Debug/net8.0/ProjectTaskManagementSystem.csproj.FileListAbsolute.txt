@@ -19,3 +19,10 @@ D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\D
 D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.dll
 D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\refint\ProjectTaskManagementSystem.dll
 D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.pdb
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.exe
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.deps.json
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.runtimeconfig.json
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.dll
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\bin\Debug\net8.0\ProjectTaskManagementSystem.pdb
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ProjectTaskManagementSystem.genruntimeconfig.cache
+D:\projects\Csharp\ProjectTaskManagementSystem\ProjectTaskManagementSystem\obj\Debug\net8.0\ref\ProjectTaskManagementSystem.dll

@@ -10,7 +10,15 @@ internal class UserRepositoryFile : IUserRepository
     private IFileReadre _fileReadre;
     private IFileWriter _fileWriter;    
     private IPasswordHasher _passwordHasher;
-
+    /// <summary>
+    /// menage file repo
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="fileName"></param>
+    /// <param name="userConverter"></param>
+    /// <param name="fileReadre"></param>
+    /// <param name="fileWriter"></param>
+    /// <param name="passwordHasher"></param>
     public UserRepositoryFile(string path, string fileName, IConvertor<User> userConverter,
         IFileReadre fileReadre, IFileWriter fileWriter, IPasswordHasher passwordHasher)
     {
@@ -22,7 +30,7 @@ internal class UserRepositoryFile : IUserRepository
         _passwordHasher = passwordHasher;
     }
 
-    public void AddUser(User user)
+    public void AddNewUser(User user)
     {
         _fileWriter.writeOneLine(_Path, _fileName, _userConverter.ToString(user));
     }

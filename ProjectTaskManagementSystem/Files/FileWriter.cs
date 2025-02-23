@@ -12,7 +12,10 @@ internal class FileWriter :  IFileWriter
         DirectorValidator.CheckIsDirectorExist(folderPath);
         FileValidator.CheckIsFileExist(folderPath, fileName);
 
-        File.AppendAllText(Path.Combine(folderPath, fileName), line+Environment.NewLine);
+        using (StreamWriter writer = new StreamWriter(Path.Combine(folderPath, fileName), true))
+        {
+            writer.WriteLine(line); 
+        }
     }  
     public void writeAllLines(string folderPath, string fileName, string[] lines)
     {

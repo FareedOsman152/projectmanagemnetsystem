@@ -5,18 +5,16 @@ namespace ProjectTaskManagementSystem.Files.ObjectsConverter.UserConverter;
 internal class UserConvertor : IConvertor<User>
 {    
     
-    private readonly UserFactory _userFactory;
+    private UserFactory _userFactory;
 
     public UserConvertor( UserFactory userFactory)
     {
         _userFactory = userFactory;
     }
-        
-    public string ToString(User user)
-    {
-        return $"{user.ID}//{user.UserName}//{user.HashPassword}";
-    }
+    public void setUserFactory(UserFactory userFactory) => _userFactory = userFactory;
 
+    public string ToString(User user) => $"{user.ID}//{user.UserName}//{user.HashPassword}";
+    
     /// <summary>
     /// Convert an IEnumerable of User objects to ann IEnumerable of strings
     /// </summary>
