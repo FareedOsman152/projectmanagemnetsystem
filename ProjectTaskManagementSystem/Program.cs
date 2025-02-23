@@ -43,8 +43,8 @@ class Program
         repo.UpdateUser(userFactory.CreateUpdatedUser(user, newUserName, newPass));
 
 
-        var user1 = new User();
-        if (repo.GetUser("testUserToDeleted12", "testUserToDeleted12$%", out user1))
+        var user1 = repo.GetUser("testUserToDeleted12", "testUserToDeleted12$%");
+        if (user1 is not null)
         {
             repo.DeleteUser(user1);
             Console.WriteLine("user deleted");

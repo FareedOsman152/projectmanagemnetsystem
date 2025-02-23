@@ -7,14 +7,10 @@ using ProjectTaskManagementSystem.UserSpace.UserValidations.Interfaces;
 namespace ProjectTaskManagementSystem.UserSpace;
 internal class User
 {
-    private string _id;
-    private string _userName;
-    private string _hashPassword;
-    public string ID => _id;
-    public string UserName => _userName;
-    public string HashPassword => _hashPassword;
-    public User() { }
-    
+    public string ID { get; private set; }
+    public string UserName { get; private set; }
+    public string HashPassword { get; private set; }
+
     /// <summary>
     /// Constructor to Create a User 
     /// </summary>
@@ -26,9 +22,8 @@ internal class User
     /// <exception cref="ArgumentException"></exception>
     public User(string id, string userName, string hashPassword)
     {
-        _id = id;
-        _userName = userName;
-        _hashPassword = hashPassword;
+        ID = id;
+        UserName = userName;
+        HashPassword = hashPassword;
     }
-
 }
