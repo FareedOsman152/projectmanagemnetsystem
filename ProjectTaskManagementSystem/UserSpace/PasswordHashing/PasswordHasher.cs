@@ -1,7 +1,8 @@
-﻿using System.Security.Cryptography;
+﻿using ProjectTaskManagementSystem.UserSpace.PasswordHashing.Interfaces;
+using System.Security.Cryptography;
 using System.Text;
 
-namespace ProjectTaskManagementSystem.UserSpace;
+namespace ProjectTaskManagementSystem.UserSpace.PasswordHashing;
 
 public class PasswordHasher : IPasswordHasher
 {

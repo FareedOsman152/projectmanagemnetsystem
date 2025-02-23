@@ -1,0 +1,35 @@
+﻿using ProjectTaskManagementSystem.Files.Interfaces;
+using ProjectTaskManagementSystem.Files.ObjectsConverter.UserConverter;
+
+namespace ProjectTaskManagementSystem.UserSpace.UserFactory;
+
+internal class GetLastIDFromFile : IGetLastID
+{
+    private readonly string _path;
+    private readonly string _fileName;
+    private readonly IFileReadre _fileReader;
+    private readonly IConvertor<User> _userConvertor;
+
+    public GetLastIDFromFile(string path, string fileName, 
+        IFileReadre fileReader, IConvertor<User> userConvertor)
+    {
+        _path = path;
+        _fileName = fileName;
+        _fileReader = fileReader;
+        _userConvertor = userConvertor;
+    }
+
+    public int LastUniqueID()
+    {
+        if (!File.Exists(Path.Combine(_path, _fileName)))
+        {
+            return -1;
+        }
+
+        var line = _fileReader.getLastLine(_path, _fileName);
+        if (string.IsNullOrEmpty(line)) return -1;
+
+        var user = _userConvertor.ToObj(line);
+        return int.Parse(user.ID);
+    }
+}

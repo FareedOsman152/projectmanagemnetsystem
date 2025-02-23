@@ -9,7 +9,7 @@
 
 //internal class LogIn
 //{
-//    private readonly IPasswordHasher _iPasswordHasher;
+//    private readofnly IPasswordHasher _iPasswordHasher;
 //    private readonly IUserValidator _userValidator;
 
 //    public LogIn(IPasswordHasher iPasswordHasher, IUserValidator userValidator)

@@ -1,16 +1,15 @@
 ﻿using ProjectTaskManagementSystem.UserSpace;
-using ProjectTaskManagementSystem.UserSpace.UserValidations.Interfaces;
+using ProjectTaskManagementSystem.UserSpace.UserFactory;
 namespace ProjectTaskManagementSystem.Files.ObjectsConverter.UserConverter;
 
 internal class UserConvertor : IConvertor<User>
 {    
-    private readonly IPasswordHasher _passwordHasher;
-    private readonly IUserValidator _userValidator;
+    
+    private readonly UserFactory _userFactory;
 
-    public UserConvertor(IPasswordHasher passwordHasher, IUserValidator userValidator)
+    public UserConvertor( UserFactory userFactory)
     {
-        _passwordHasher = passwordHasher;
-        _userValidator = userValidator;
+        _userFactory = userFactory;
     }
         
     public string ToString(User user)
@@ -19,16 +18,16 @@ internal class UserConvertor : IConvertor<User>
     }
 
     /// <summary>
-    /// Convert an Array of User objects to ann Araay of strings
+    /// Convert an IEnumerable of User objects to ann IEnumerable of strings
     /// </summary>
     /// <param name="user"></param>
     /// <returns></returns>
-    public string[] ToStrings(User[] user)
+    public IEnumerable<string> ToStrings(IEnumerable<User> users)
     {
-        string[] result = new string[user.Length];
-        for (int i = 0; i < user.Length; i++)
+        string[] result = new string[users.Count()];
+        for (int i = 0; i < users.Count(); i++)
         {
-            result[i] = ToString(user[i]);
+            result[i] = ToString(users.ElementAt(i));
         }
         return result;
     }
@@ -54,21 +53,21 @@ internal class UserConvertor : IConvertor<User>
             throw new ArgumentException("Invalid line format");
         }
 
-        return User.CreateUserFromFile(parts[0], parts[1], parts[2],_passwordHasher,_userValidator);   
+        return _userFactory.CreateUserFromFile(parts[0], parts[1], parts[2]);   
     }
 
     /// <summary>
-    /// Convert an Array of strings to an Array of User objects
+    /// Convert an IEnumerable of strings to an IEnumerable of User objects
     /// </summary>
     /// <param name="lines"></param>
     /// <returns></returns>
-    public User[] ToObjs(string[] lines )
+    public IEnumerable<User> ToObjs(IEnumerable<string> lines )
     {
-        var resultUsers = new User[lines.Length];
+        var resultUsers = new List<User>(lines.Count());
        
-        for (int i = 0; i < lines.Length; i++)
+        for (int i = 0; i < lines.Count(); i++)
         {
-            resultUsers[i] = ToObj(lines[i]);
+            resultUsers[i] = ToObj(lines.ElementAt(i));
         }
         return resultUsers;
     }  

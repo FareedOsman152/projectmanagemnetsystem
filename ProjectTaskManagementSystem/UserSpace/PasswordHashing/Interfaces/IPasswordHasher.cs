@@ -1,4 +1,4 @@
-﻿namespace ProjectTaskManagementSystem.UserSpace;
+﻿namespace ProjectTaskManagementSystem.UserSpace.PasswordHashing.Interfaces;
 
 public interface IPasswordHasher
 {

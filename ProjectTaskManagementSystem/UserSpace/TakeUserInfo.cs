@@ -1,4 +1,5 @@
-﻿using ProjectTaskManagementSystem.UserSpace.UserValidations.Interfaces;
+﻿using ProjectTaskManagementSystem.UserSpace.PasswordHashing.Interface;
+using ProjectTaskManagementSystem.UserSpace.UserValidations.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
