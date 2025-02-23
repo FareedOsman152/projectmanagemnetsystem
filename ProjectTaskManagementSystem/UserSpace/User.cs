@@ -16,7 +16,7 @@ internal class User
     //private readonly IUserValidator _userValidator;
     public string ID => _id;
     public string UserName => _userName;
-    public string HashPassword => _hashPassword;    
+    public string HashPassword => _hashPassword;
     //private void CheckIsValidUser(string userName, string password)
     //{
     //    if (!_userValidator.ValidateUsername(userName))
@@ -29,7 +29,10 @@ internal class User
     //        throw new ArgumentException("Invalid Password");
     //    }
     //}
+    public User()
+    {
 
+    }
     /// <summary>
     /// Constructor to Create a User 
     /// </summary>

@@ -48,6 +48,6 @@ internal class UserFactory
     /// <returns></returns>
     public User CreateUserFromFile(string id, string userName, string password)
     {
-        return new User(id, userName, _passwordHasher.Hash(password));
+        return new User(id, userName, password);
     }
 }

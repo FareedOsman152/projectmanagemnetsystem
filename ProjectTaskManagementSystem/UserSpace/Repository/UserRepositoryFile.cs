@@ -30,10 +30,8 @@ internal class UserRepositoryFile : IUserRepository
         _passwordHasher = passwordHasher;
     }
 
-    public void AddNewUser(User user)
-    {
+    public void AddNewUser(User user)=>
         _fileWriter.writeOneLine(_Path, _fileName, _userConverter.ToString(user));
-    }
 
     public void DeleteUser(User user)
     {
@@ -47,7 +45,7 @@ internal class UserRepositoryFile : IUserRepository
                 break;
             }
         }
-        _fileWriter.writeAllLines(_Path, _fileName, _userConverter.ToStrings(users).ToArray());
+        _fileWriter.updateFile(_Path, _fileName, _userConverter.ToStrings(users).ToArray());
     }
 
     public IEnumerable<User> GetAllUsers()
@@ -86,4 +84,5 @@ internal class UserRepositoryFile : IUserRepository
         }
         _fileWriter.writeAllLines(_Path, _fileName, _userConverter.ToStrings(users).ToArray());
     }
+
 }

@@ -61,11 +61,11 @@ internal class UserConvertor : IConvertor<User>
     /// <returns></returns>
     public IEnumerable<User> ToObjs(IEnumerable<string> lines )
     {
-        var resultUsers = new List<User>(lines.Count());
+        var resultUsers = new List<User>();
        
         for (int i = 0; i < lines.Count(); i++)
         {
-            resultUsers[i] = ToObj(lines.ElementAt(i));
+            resultUsers.Add(ToObj(lines.ElementAt(i)));
         }
         return resultUsers;
     }  
