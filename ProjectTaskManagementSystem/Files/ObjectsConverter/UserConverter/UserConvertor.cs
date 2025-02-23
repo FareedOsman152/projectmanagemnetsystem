@@ -11,7 +11,6 @@ internal class UserConvertor : IConvertor<User>
     {
         _userFactory = userFactory;
     }
-    public void setUserFactory(UserFactory userFactory) => _userFactory = userFactory;
 
     public string ToString(User user) => $"{user.ID}//{user.UserName}//{user.HashPassword}";
     
