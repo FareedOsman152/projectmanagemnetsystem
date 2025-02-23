@@ -8,15 +8,15 @@ internal class GetLastIDFromFile : IGetLastID
     private readonly string _path;
     private readonly string _fileName;
     private readonly IFileReadre _fileReader;
-    private readonly IConvertor<User> _userConvertor;
+    //private readonly IConvertor<User> _userConvertor;
 
     public GetLastIDFromFile(string path, string fileName, 
-        IFileReadre fileReader, IConvertor<User> userConvertor)
+        IFileReadre fileReader)
     {
         _path = path;
         _fileName = fileName;
         _fileReader = fileReader;
-        _userConvertor = userConvertor;
+        //_userConvertor = userConvertor;
     }
 
     public int LastUniqueID()
@@ -29,7 +29,7 @@ internal class GetLastIDFromFile : IGetLastID
         var line = _fileReader.getLastLine(_path, _fileName);
         if (string.IsNullOrEmpty(line)) return -1;
 
-        var user = _userConvertor.ToObj(line);
-        return int.Parse(user.ID);
+        var ID = line.Split("//")[0];
+        return int.Parse(ID);
     }
 }

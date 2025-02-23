@@ -25,10 +25,9 @@ class Program
         var fileReader = new FileReader();
         var fileWriter = new FileWriter();
 
-        var userConverter = new UserConvertor(null!);
-        var getLastIDFromFile = new GetLastIDFromFile(folderPath, fileName, fileReader, userConverter);
+        var getLastIDFromFile = new GetLastIDFromFile(folderPath, fileName, fileReader);
         var userFactory = new UserFactory(hasher, userValidator, getLastIDFromFile);
-        userConverter.setUserFactory(userFactory);
+        var userConverter = new UserConvertor(userFactory);
 
         UserRepositoryFile repo = new UserRepositoryFile(folderPath,fileName, userConverter,
             fileReader,fileWriter,hasher);
