@@ -45,7 +45,7 @@ internal class UserRepositoryFile : IUserRepository
                 break;
             }
         }
-        _fileWriter.updateFile(_Path, _fileName, _userConverter.ToStrings(users).ToArray());
+        _fileWriter.updateFile(_Path, _fileName, _userConverter.ToStrings(users));
     }
 
     public IEnumerable<User> GetAllUsers()
@@ -82,7 +82,7 @@ internal class UserRepositoryFile : IUserRepository
                 break;
             }
         }
-        _fileWriter.writeAllLines(_Path, _fileName, _userConverter.ToStrings(users).ToArray());
+        _fileWriter.updateFile(_Path, _fileName, _userConverter.ToStrings(users));
     }
 
 }

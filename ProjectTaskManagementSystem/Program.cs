@@ -32,16 +32,26 @@ class Program
 
         UserRepositoryFile repo = new UserRepositoryFile(folderPath,fileName, userConverter,
             fileReader,fileWriter,hasher);
-        repo.AddNewUser(userFactory.CreateNewUser("testUserToDeleted12", "testUserToDeleted12$%"));
+        string userName = "testUserToUpdate12";
+        string pass = "testUserToUpdate12@$%";
+        User user = userFactory.CreateNewUser(userName, pass);
 
-        var user = new User();
-        if (repo.GetUser("testUserToDeleted12", "testUserToDeleted12$%", out user))
-        {
-            repo.DeleteUser(user);
-            Console.WriteLine("user deleted");
-        }
+        repo.AddNewUser(user);
 
-        else Console.WriteLine("user not found");
+        string newUserName = "NEWtestUserToUpdate12";
+        string newPass = "NEWtestUserToUpdate12@#$";
+
+        repo.UpdateUser(userFactory.CreateUpdatedUser(user, newUserName, newPass));
+
+
+        //var user = new User();
+        //if (repo.GetUser("testUserToDeleted12", "testUserToDeleted12$%", out user))
+        //{
+        //    repo.DeleteUser(user);
+        //    Console.WriteLine("user deleted");
+        //}
+
+        //else Console.WriteLine("user not found");
 
 
     }

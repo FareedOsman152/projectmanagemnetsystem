@@ -17,14 +17,14 @@ internal class FileWriter : IFileWriter
             writer.WriteLine(line);
         }
     }
-    public void writeAllLines(string folderPath, string fileName, string[] lines)
+    public void writeAllLines(string folderPath, string fileName, IEnumerable<string> lines)
     {
         DirectorValidator.CheckIsDirectorExist(folderPath);
         FileValidator.CheckIsFileExist(folderPath, fileName);
 
         File.AppendAllLines(Path.Combine(folderPath, fileName), lines);
     }
-    public void updateFile(string folderPath, string fileName, string[] lines)
+    public void updateFile(string folderPath, string fileName, IEnumerable<string> lines)
     {
         DirectorValidator.CheckIsDirectorExist(folderPath);
         FileValidator.CheckIsFileExist(folderPath, fileName);

@@ -50,4 +50,16 @@ internal class UserFactory
     {
         return new User(id, userName, password);
     }
+    /// <summary>
+    /// method to update user with new user name and password
+    /// </summary>
+    /// <param name="user"></param>
+    /// <param name="userName"></param>
+    /// <param name="password"></param>
+    /// <returns></returns>
+    public User CreateUpdatedUser(User user, string userName, string password)
+    {
+        CheckIsValidUser(userName, password);
+        return new User(user.ID, userName, _passwordHasher.Hash(password));
+    }
 }
