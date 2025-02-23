@@ -43,14 +43,14 @@ class Program
         repo.UpdateUser(userFactory.CreateUpdatedUser(user, newUserName, newPass));
 
 
-        //var user = new User();
-        //if (repo.GetUser("testUserToDeleted12", "testUserToDeleted12$%", out user))
-        //{
-        //    repo.DeleteUser(user);
-        //    Console.WriteLine("user deleted");
-        //}
+        var user1 = new User();
+        if (repo.GetUser("testUserToDeleted12", "testUserToDeleted12$%", out user1))
+        {
+            repo.DeleteUser(user1);
+            Console.WriteLine("user deleted");
+        }
 
-        //else Console.WriteLine("user not found");
+        else Console.WriteLine("user not found");
 
 
     }

@@ -54,7 +54,7 @@ internal class UserRepositoryFile : IUserRepository
         return _userConverter.ToObjs(lines).ToList();
     }
 
-    public bool GetUser(string username, string password, out User user)
+    public User GetUser(string username, string password)
     {
         var users = GetAllUsers().ToList();
         var hashPassword = _passwordHasher.Hash(password);
@@ -62,12 +62,10 @@ internal class UserRepositoryFile : IUserRepository
         {
             if (users[i].UserName == username && users[i].HashPassword == hashPassword)
             {
-                user = users[i];
-                return true;
+                return users[i];
             }
-        }
-        user = null!;
-        return false;
+        }        
+        return null;
     }
 
     public void UpdateUser(User user)
