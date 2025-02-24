@@ -26,6 +26,7 @@ internal class UserFactory
             throw new ArgumentException("Invalid Password");
         }
     }
+
     /// <summary>
     /// User Name Rules : more than 5 char && has digit && has punctuation && not contain '/'
     /// Password Rules : more than 7 char && has number && has ponctuation && has upper case && has lower case
@@ -39,6 +40,7 @@ internal class UserFactory
         string id = (_lastID.LastUniqueID() + 1).ToString();
         return new User(id, userName, _passwordHasher.Hash(password));
     }
+
     /// <summary>
     /// create user with id from file
     /// </summary>
@@ -50,6 +52,7 @@ internal class UserFactory
     {
         return new User(id, userName, password);
     }
+
     /// <summary>
     /// method to update user with new user name and password
     /// </summary>

@@ -5,7 +5,7 @@ namespace ProjectTaskManagementSystem.Files.ObjectsConverter.UserConverter;
 internal class UserConvertor : IConvertor<User>
 {    
     
-    private UserFactory _userFactory;
+    private readonly UserFactory _userFactory;
 
     public UserConvertor( UserFactory userFactory)
     {
