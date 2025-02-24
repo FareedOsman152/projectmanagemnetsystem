@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ProjectTaskManagementSystem.UserSpace.PasswordHashing.Interfaces;
 using ProjectTaskManagementSystem.UserSpace.Repository;
 using ProjectTaskManagementSystem.Files.ObjectsConverter.UserConverter;
 using ProjectTaskManagementSystem.UserSpace.UserFactory;
 using ProjectTaskManagementSystem.UserSpace.PasswordHashing;
 using ProjectTaskManagementSystem.UserSpace.UserValidations.Validator;
-using ProjectTaskManagementSystem.UserSpace;
 using ProjectTaskManagementSystem.Files;
 using ProjectTaskManagementSystem.UserSpace.Service;
 
@@ -19,6 +17,7 @@ class Program
 {    
     static void Main(string[]args)
     {
+        // not used dreictly 
         var folderPath = "D:\\projects\\Csharp\\ProjectTaskManagementSystem";
         var fileName = "users.txt";
         var hasher = new PasswordHasher();
@@ -33,6 +32,7 @@ class Program
         var repo = new UserRepositoryFile(folderPath,fileName, userConverter,
             fileReader,fileWriter,hasher);
 
+        // used directly
         var userService = new UserService(repo, userValidator);
 
         var logger = new Login(userService);
