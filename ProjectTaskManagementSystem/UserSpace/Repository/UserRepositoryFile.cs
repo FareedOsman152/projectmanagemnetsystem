@@ -54,13 +54,12 @@ internal class UserRepositoryFile : IUserRepository
         return _userConverter.ToObjs(lines).ToList();
     }
 
-    public User GetUser(string username, string password)
+    public User GetUser(string username)
     {
         var users = GetAllUsers().ToList();
-        var hashPassword = _passwordHasher.Hash(password);
         for (int i = 0; i < users.Count; i++)
         {
-            if (users[i].UserName == username && users[i].HashPassword == hashPassword)
+            if (users[i].UserName == username)
             {
                 return users[i];
             }

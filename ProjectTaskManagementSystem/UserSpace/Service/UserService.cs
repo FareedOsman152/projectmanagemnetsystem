@@ -1,19 +1,21 @@
 ﻿using ProjectTaskManagementSystem.UserSpace.Repository;
-using ProjectTaskManagementSystem.UserSpace.UserValidations.Validator;
+using ProjectTaskManagementSystem.UserSpace.UserValidations.Interfaces;
 
 namespace ProjectTaskManagementSystem.UserSpace.Service;
 
 class UserService : IUserService
 {
-    private readonly UserRepositoryFile _userRepository;
-    private readonly UserValidator _userValidator;
-    public UserService(UserRepositoryFile userRepository, UserValidator userValidator)
+    private readonly IUserRepository _userRepository;
+    private readonly IUserValidator _userValidator;
+    public UserService(UserRepositoryFile userRepository, IUserValidator userValidator)
     {
         _userRepository = userRepository;
         _userValidator = userValidator;
     }
     public void AddNewUser(User user)
     {
+        if(!isUserNameIsAvailable(user.UserName))
+            throw new Exception("User name is not available");
         _userRepository.AddNewUser(user);
     }
     public void UpdateUser(User user)
@@ -24,9 +26,9 @@ class UserService : IUserService
     {
         _userRepository.DeleteUser(user);
     }
-    public User FindUser(string userName, string password)
+    public User FindUser(string userName)
     {
-        return _userRepository.GetUser(userName, password);
+        return _userRepository.GetUser(userName);
     }
     public List<User> GetAllUsers()
     {
@@ -35,5 +37,9 @@ class UserService : IUserService
     public bool isValideUserInfo(string userName, string password)
     {
         return _userValidator.ValidateUsername(userName) && _userValidator.ValidatePassword(password);
+    }
+    public bool isUserNameIsAvailable(string userName)
+    {
+        return _userRepository.GetAllUsers().Any(user => user.UserName == userName);
     }
 }

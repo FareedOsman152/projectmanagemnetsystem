@@ -33,7 +33,8 @@ internal class Login
                 Console.WriteLine("Invalid username or password\ntry again");
                 continue;
             }
-            var user = _userService.FindUser(username!, password!);
+
+            var user = _userService.FindUser(username!);
 
             if (user is null)
             {
