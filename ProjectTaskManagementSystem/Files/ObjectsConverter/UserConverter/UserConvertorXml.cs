@@ -10,14 +10,8 @@ using System.Xml.Serialization;
 
 namespace ProjectTaskManagementSystem.Files.ObjectsConverter.UserConverter;
 
-class UserConvertorXmlcs : IConvertor<User>
+class UserConvertorXml : IConvertor<User>
 {
-    private readonly UserFactory _userFactory;
-
-    public UserConvertorXmlcs(UserFactory userFactory)
-    {
-        _userFactory = userFactory;
-    }
     public User ToObj(string xml)
     {
         var xmlSerializer = new XmlSerializer(typeof(User));

@@ -26,4 +26,9 @@ internal class User
         UserName = userName;
         HashPassword = hashPassword;
     }
+
+    public User()
+    {
+            
+    }
 }
