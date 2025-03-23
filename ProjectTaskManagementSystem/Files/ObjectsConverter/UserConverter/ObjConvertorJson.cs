@@ -1,5 +1,4 @@
-﻿using ProjectTaskManagementSystem.UserSpace.UserFactory;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,29 +11,29 @@ using System.Text.Json.Serialization;
 
 namespace ProjectTaskManagementSystem.Files.ObjectsConverter.UserConverter;
 
-class UserConvertorJson: IConvertor <User>
+class ObjConvertorJson <T>: IConvertor <T> where T : class
 {
-    public User ToObj(string json)
+    public T ToObj(string json)
     {
-        return JsonSerializer.Deserialize<User>(json);
+        return JsonSerializer.Deserialize<T>(json);
     }
 
-    public IEnumerable<User> ToObjs(IEnumerable<string> Jsons)
+    public IEnumerable<T> ToObjs(IEnumerable<string> Jsons)
     {
-        var users = new List<User>();
+        var objs = new List<T>();
         foreach (var Json in Jsons)
         {
-            users.Add(ToObj(Json));
+            objs.Add(ToObj(Json));
         }
-        return users;
+        return objs;
     }
 
-    public string ToString(User obj)
+    public string ToString(T obj)
     {
         return JsonSerializer.Serialize(obj);
     }
 
-    public IEnumerable<string> ToStrings(IEnumerable<User> objs)
+    public IEnumerable<string> ToStrings(IEnumerable<T> objs)
     {
         var Jsons = new List<string>();
         foreach (var obj in objs)
