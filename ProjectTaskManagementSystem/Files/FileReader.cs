@@ -13,6 +13,8 @@ internal class FileReader : IFileReadre
     {
         DirectorValidator.CheckIsDirectorExist(folderPath);
         FileValidator.CheckIsFileExist(folderPath, fileName);
+        if (new FileInfo(Path.Combine(folderPath, fileName)).Length == 0)
+            return Array.Empty<string>();
 
         return File.ReadAllLines(Path.Combine(folderPath, fileName));
     }
@@ -21,6 +23,8 @@ internal class FileReader : IFileReadre
     {
         DirectorValidator.CheckIsDirectorExist(folderPath);
         FileValidator.CheckIsFileExist(folderPath, fileName);
+        if (new FileInfo(Path.Combine(folderPath, fileName)).Length == 0)
+            return "";
 
         return File.ReadLines(Path.Combine(folderPath, fileName)).Last();
     }

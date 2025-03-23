@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using ProjectTaskManagementSystem.UserSpace.PasswordHashing.Interfaces;
 using ProjectTaskManagementSystem.UserSpace.UserValidations.Interfaces;
@@ -10,7 +11,7 @@ internal class User
     public string ID { get; private set; }
     public string UserName { get; private set; }
     public string HashPassword { get; private set; }
-
+    [JsonConstructor]
     /// <summary>
     /// Constructor to Create a User 
     /// </summary>

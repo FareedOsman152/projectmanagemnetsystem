@@ -17,18 +17,18 @@ internal class UserValidator : IUserValidator
     private readonly ValidationMenager _usernameValidator = new ValidationMenager(new IUserDataValidation[]
     {
         new UserNameLengthRule(),
-        new UserNameDigitRule(),
-        new UserNamePunctuationRule(),
-        new UserNameBlockSlash()
+        //new UserNameDigitRule(),
+        //new UserNamePunctuationRule(),
+        //new UserNameBlockSlash()
     });
 
     private readonly ValidationMenager _passwordValidator = new ValidationMenager(new IUserDataValidation[]
     {
         new PasswordLengthRule(),
-        new PasswordDigitRule(),
-        new PasswordPunctuationRule(),
-        new PasswordUpperCaseRule(),
-        new PasswordLowerCaseRule()
+        //new PasswordDigitRule(),
+        //new PasswordPunctuationRule(),
+        //new PasswordUpperCaseRule(),
+        //new PasswordLowerCaseRule()
     });
 
     public bool ValidateUsername(string? username) =>

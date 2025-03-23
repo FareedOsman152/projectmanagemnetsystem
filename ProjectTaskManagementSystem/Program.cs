@@ -10,6 +10,7 @@ using ProjectTaskManagementSystem.UserSpace.PasswordHashing;
 using ProjectTaskManagementSystem.UserSpace.UserValidations.Validator;
 using ProjectTaskManagementSystem.Files;
 using ProjectTaskManagementSystem.UserSpace.Service;
+using ProjectTaskManagementSystem.UserSpace;
 
 namespace ProjectTaskManagementSystem;
 
@@ -25,9 +26,9 @@ class Program
         var fileReader = new FileReader();
         var fileWriter = new FileWriter();
 
-        var getLastIDFromFile = new GetLastIDFromFile(folderPath, fileName, fileReader);
+        var userConverter = new ObjConvertorJson<User>();
+        var getLastIDFromFile = new GetLastIDFromFile(folderPath, fileName, fileReader, userConverter); ;
         var userFactory = new UserFactory(hasher, userValidator, getLastIDFromFile);
-        var userConverter = new UserConvertor(userFactory);
 
         var repo = new UserRepositoryFile(folderPath,fileName, userConverter,
             fileReader,fileWriter,hasher);
@@ -37,21 +38,21 @@ class Program
 
         var logger = new Login(userService);
 
-        var user = logger.LoginAction();
-        if (user is not null)
-        {
-            Console.WriteLine("Welcome");
-        }
-        else
-        {
-            Console.WriteLine("faild");
-        }
+        //var user = logger.LoginAction();
+        //if (user is not null)
+        //{
+        //    Console.WriteLine("Welcome");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("faild");
+        //}
 
-        //string userName = "testUserToUpdate12";
-        //string pass = "testUserToUpdate12@$%";
-        //User user = userFactory.CreateNewUser(userName, pass);
+        string userName = "testuser2";
+        string pass = "passtest2";
+        User user = userFactory.CreateNewUser(userName, pass);
 
-        //repo.AddNewUser(user);
+        repo.AddNewUser(user);
 
         //string newUserName = "NEWtestUserToUpdate12";
         //string newPass = "NEWtestUserToUpdate12@#$";
@@ -59,14 +60,14 @@ class Program
         //repo.UpdateUser(userFactory.CreateUpdatedUser(user, newUserName, newPass));
 
 
-        //var user1 = repo.GetUser("testUserToDeleted12", "testUserToDeleted12$%");
-        //if (user1 is not null)
-        //{
-        //    repo.DeleteUser(user1);
-        //    Console.WriteLine("user deleted");
-        //}
+        var user1 = repo.GetUser("testuser1");
+        if (user1 is not null)
+        {
+            repo.DeleteUser(user1);
+            Console.WriteLine("user deleted");
+        }
 
-        //else Console.WriteLine("user not found");
+        else Console.WriteLine("user not found");
 
 
     }
