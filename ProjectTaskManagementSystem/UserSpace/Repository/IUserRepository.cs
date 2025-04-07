@@ -11,6 +11,7 @@ internal interface IUserRepository
     public void AddNewUser(User user);
     public void DeleteUser(User user);
     public void UpdateUser(User user);
-    public User GetUser(string username);
+    public User GetUserById(string Id);
+    public User GetUserByUsername(string username);
     public IEnumerable<User> GetAllUsers();
 }

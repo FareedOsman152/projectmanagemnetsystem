@@ -11,6 +11,7 @@ using ProjectTaskManagementSystem.UserSpace.UserValidations.Validator;
 using ProjectTaskManagementSystem.Files;
 using ProjectTaskManagementSystem.UserSpace.Service;
 using ProjectTaskManagementSystem.UserSpace;
+using ProjectTaskManagementSystem.Files.ObjectsConverter;
 
 namespace ProjectTaskManagementSystem;
 
@@ -19,7 +20,7 @@ class Program
     static void Main(string[]args)
     {
         // not used dreictly 
-        var folderPath = "D:\\projects\\Csharp\\ProjectTaskManagementSystem";
+        var folderPath = @"D:\projects\Csharp\ProjectTaskManagementSystem\Data";
         var fileName = "users.txt";
         var hasher = new PasswordHasher();
         var userValidator = new UserValidator();
@@ -36,39 +37,7 @@ class Program
         // used directly
         var userService = new UserService(repo, userValidator);
 
-        var logger = new Login(userService);
-
-        //var user = logger.LoginAction();
-        //if (user is not null)
-        //{
-        //    Console.WriteLine("Welcome");
-        //}
-        //else
-        //{
-        //    Console.WriteLine("faild");
-        //}
-
-        string userName = "testuser2";
-        string pass = "passtest2";
-        User user = userFactory.CreateNewUser(userName, pass);
-
-        repo.AddNewUser(user);
-
-        //string newUserName = "NEWtestUserToUpdate12";
-        //string newPass = "NEWtestUserToUpdate12@#$";
-
-        //repo.UpdateUser(userFactory.CreateUpdatedUser(user, newUserName, newPass));
-
-
-        var user1 = repo.GetUser("testuser1");
-        if (user1 is not null)
-        {
-            repo.DeleteUser(user1);
-            Console.WriteLine("user deleted");
-        }
-
-        else Console.WriteLine("user not found");
-
+        var logger = new Login(userService);       
 
     }
 }
