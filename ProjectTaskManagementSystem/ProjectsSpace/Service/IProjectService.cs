@@ -8,5 +8,7 @@ namespace ProjectTaskManagementSystem.ProjectsSpace.Service
 {
     interface IProjectService
     {
+        void AddNew(); 
+        void AfddNew(); 
     }
 }
