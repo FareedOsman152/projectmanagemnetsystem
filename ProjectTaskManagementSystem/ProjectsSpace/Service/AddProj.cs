@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectTaskManagementSystem.ProjectsSpace.Service
 {
-    interface IProjectService
+    class AddProj
     {
-        void AddNew(); 
-        void AfddNew(); 
-        void AffffddNew(); 
-        void AffbnytnffddNew(); 
+        public int MyProperty { get; set; }
+        public int MysProperty { get; set; }
+        public int MysPrfoperty { get; set; }
     }
 }
