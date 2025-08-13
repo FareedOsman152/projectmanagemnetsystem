@@ -12,7 +12,9 @@ internal class FileReader : IFileReadre
     public string[] getAllLines(string folderPath, string fileName)
     {
         DirectorValidator.CheckIsDirectorExist(folderPath);
+
         FileValidator.CheckIsFileExist(folderPath, fileName);
+
         if (new FileInfo(Path.Combine(folderPath, fileName)).Length == 0)
             return Array.Empty<string>();
 
